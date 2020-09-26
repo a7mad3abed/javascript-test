@@ -11,22 +11,14 @@
 
 var num ;
 
-function mouseOver(something){
-  console.log(something);
-}
 
-function mouseOut(j){
-  document.getElementsByClassName('smallDiv')[j].style.background = "salmon";
-}
 
-function printNum(){
-  alert(num);
-}
 
 var elems = document.getElementsByClassName('smallDiv');
 
 
 for (i = 0; i < elems.length; i++){
+  // here let is critical because when the variable is var it will always have the highest element number 
   let indexy = i;
   elems[indexy].onmouseover = function () {
     elems[indexy].style.background = 'red';
