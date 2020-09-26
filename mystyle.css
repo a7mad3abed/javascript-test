@@ -1,0 +1,62 @@
+
+body{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.title {
+    text-align: center ;
+    color: rgb(192, 67, 67);
+    font-size: 150;
+    font-weight: bold;
+    font-style: italic;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+#myDiv{
+    display: grid;
+    grid-template-columns: repeat(10, 75px[col-start]);
+    grid-template-rows: repeat(10, 75px[row-start]);
+    border: 3px solid black;
+    width: 770px;
+    height: 770px;
+    background-color: rgb(18, 145, 248);
+    border-radius:  30px;
+}
+
+.smallDiv{
+    position: relative;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border: 3px solid blue;
+    width: 65px;
+    height: 65px;
+    background-color: salmon;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+    margin-top: 20%;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+}
+
+canvas{
+    position: absolute;
+    background-color: lightblue;
+}
+
+
+#myCanvas{
+    z-index: 1;
+}
+
+#button01{
+    position: relative;
+    left: 25%;
+}
